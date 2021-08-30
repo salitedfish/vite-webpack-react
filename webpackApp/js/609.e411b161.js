@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_vite_app=self.webpackChunkmy_vite_app||[]).push([[609],{609:(e,t,a)=>{a.r(t),a.d(t,{default:()=>m});var s=a(294),c=a(727);const m=(0,s.memo)((()=>s.createElement(c.OL,{to:"/home"},s.createElement("div",{className:" text-green-800 text-center text-9xl h-96 flex items-center justify-around"},"跳到首页"))))}}]);
