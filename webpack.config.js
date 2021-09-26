@@ -19,7 +19,7 @@ module.exports = {
 
     output: {
         filename:'js/[name].[contenthash:8].js',
-        path: path.resolve(__dirname + '/webpackApp'),
+        path: path.resolve(__dirname + '/webpackDist'),
     },
 
     resolve:{

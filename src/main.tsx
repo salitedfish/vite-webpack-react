@@ -9,16 +9,16 @@ import "@/tailwind.less"
 import '@/index.less'
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Suspense fallback={'loading'}>
-      <Provider store={store}>
+      <Provider store={store} >
         <HashRouter>
           {
             renderRoutes(routes)
           }
         </HashRouter>
       </Provider>
-    </Suspense>
-  </React.StrictMode>,
+    </Suspense>,
+  // </React.StrictMode>,
   document.getElementById('root')
 )

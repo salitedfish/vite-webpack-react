@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: '/home',
-    component: lazy(()=>{return import("@/view/home/App")}),
+    component: lazy(()=>{return import("@/view/home/App_chain33Test")}),
     routes:[
       {
         path: '/home',
