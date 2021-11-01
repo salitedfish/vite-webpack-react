@@ -28,7 +28,7 @@ const routes = [
       {
         path: '/home/homeB',
         exact:true,
-        component:lazy(()=>{return import("@/view/home/homeB")})
+        component:lazy(()=>{return import("@/view/home/homeB")}),
       },
     ]
   },

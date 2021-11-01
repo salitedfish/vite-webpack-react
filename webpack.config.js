@@ -98,11 +98,15 @@ module.exports = {
         },
         minimize:true,
         minimizer:[
-            new UglifyjsPlugin(),
+            new UglifyjsPlugin({
+                sourceMap: true,
+            }),
             new TerserWebpackPlugin({
-                sourceMap: false,
+                sourceMap: true,
                 parallel: true,
               }),
         ],
-    }
+    },
+     
+    devtool: 'source-map'
 }

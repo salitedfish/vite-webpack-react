@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { terser } from 'rollup-plugin-terser'
 import reactRefresh from '@vitejs/plugin-react-refresh'
 const path = require('path')
 
@@ -18,6 +19,16 @@ export default defineConfig({
         find:'@component',replacement:path.resolve(__dirname,'src/component')
       },
     ]
+  },
+  build:{
+    rollupOptions:{
+      output:{
+        
+        // chunkFileNames:'assets/thunk.[name].[contenthash:8].js' 
+      },
+      plugins:[terser()]//感觉没啥用
+    },
+    sourcemap:true
   },
   server: {
     port:3000,
