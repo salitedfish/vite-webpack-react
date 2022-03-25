@@ -8,6 +8,11 @@ import store from "@/store/store"
 import "@/tailwind.less"
 import '@/index.less'
 
+console.log(import.meta.env.VITE_APP_TEXT)
+console.log(import.meta.env.MODE)
+console.log(import.meta.env.VITE_REACT_APP_TEXT)
+console.log(import.meta.env)
+
 ReactDOM.render(
   // <React.StrictMode>
     <Suspense fallback={'loading'}>
@@ -20,5 +25,6 @@ ReactDOM.render(
       </Provider>
     </Suspense>,
   // </React.StrictMode>,
+
   document.getElementById('root')
 )

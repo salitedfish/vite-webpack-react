@@ -2,6 +2,7 @@ import React,{memo} from "react"
 import requestConfig from "@/service/requestConfig"
 
 function App_chain33test(){
+
     const NewAccount = async () => {
         const data = {
             "jsonrpc":"2.0",
